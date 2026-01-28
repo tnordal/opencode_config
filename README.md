@@ -1,5 +1,7 @@
 # OpenCode Configuration Learning Project
 
+### Version 1.0
+
 Welcome to the OpenCode Configuration Learning Project! This repository contains comprehensive examples and documentation for learning how to customize OpenCode using **custom agents**, **custom commands**, and **agent skills**.
 
 ## 📚 Table of Contents
