@@ -1,0 +1,10 @@
+{
+  "$schema": "https://opencode.ai/config.json",
+  "command": {
+    "test": {
+      "description": "Run tests and summarize failures",
+      "template": "Run the full test suite. If there are failures, summarize the output and propose a minimal fix.",
+      "agent": "build"
+    }
+  }
+}

@@ -1,0 +1,16 @@
+{
+  "$schema": "https://opencode.ai/config.json",
+  "agent": {
+    "readonly-reviewer": {
+      "description": "Read-only code reviewer for quick checks",
+      "mode": "subagent",
+      "temperature": 0.1,
+      "tools": {
+        "write": false,
+        "edit": false,
+        "bash": false
+      },
+      "prompt": "You are a read-only code reviewer. Focus on correctness, security, and maintainability. Do not make edits."
+    }
+  }
+}

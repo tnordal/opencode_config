@@ -1,0 +1,17 @@
+{
+  "$schema": "https://opencode.ai/config.json",
+  "command": {
+    "pr": {
+      "description": "Draft PR title/body/checklist",
+      "template": "Context:\n!`git log --oneline -10`\n\nDiff summary:\n!`git diff --stat`\n\nWrite a PR title, bullets, and checklist.",
+      "agent": "plan",
+      "subtask": true
+    },
+    "refactor": {
+      "description": "Plan a safe refactor",
+      "template": "Target: $ARGUMENTS\n\nPropose a safe refactor plan with steps, risks, and tests.",
+      "agent": "plan",
+      "subtask": true
+    }
+  }
+}

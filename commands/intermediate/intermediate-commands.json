@@ -1,0 +1,15 @@
+{
+  "$schema": "https://opencode.ai/config.json",
+  "command": {
+    "component": {
+      "description": "Create a component skeleton",
+      "template": "Create a new component named $ARGUMENTS with proper typing and a minimal test.",
+      "agent": "build"
+    },
+    "review-changes": {
+      "description": "Review git status and recent commits",
+      "template": "Working tree:\n!`git status --porcelain=v1`\n\nRecent commits:\n!`git log --oneline -10`\n\nSummarize risk and next steps.",
+      "agent": "plan"
+    }
+  }
+}
