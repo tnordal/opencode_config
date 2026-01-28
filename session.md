@@ -42,6 +42,10 @@ Integration / patterns:
 - `examples/real-world-workflows.md`
 - `examples/skill-permission-examples.md`
 
+New in this session:
+
+- `PROJECT_TODO.md` (created; currently untracked)
+
 ## Design Constraints Used
 
 - Keep everything project-local (no `~/.config/opencode` guidance required for this repo).
@@ -83,7 +87,17 @@ From `C:\Users\tnord\sandbox\opencode_config`:
 ls -R
 ```
 
+From this workspace root:
+
+```bash
+git status
+git log -5 --oneline
+```
+
 ## Notes
 
-- No git repo is initialized here (as observed earlier). If needed, initialize separately.
-- A previous tooling issue (“Tool execution aborted”) happened when writing larger files; using `apply_patch` worked reliably.
+- This directory is a git repo in the current environment (branch: `main`). Recent commits include:
+  - `eda59cf` Set version 1.0
+  - `5be2c93` Add comprehensive guides and examples for agents, commands, and skills
+- `PROJECT_TODO.md` was generated from this handoff’s “Recommended Next Work” section and existing repo contents; completed tasks are ticked.
+- A previous tooling issue (“Tool execution aborted”) was noted in prior work; using `apply_patch` has been reliable for creating/editing files.
