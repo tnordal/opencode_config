@@ -10,7 +10,9 @@ This file is a drop-in handoff note for a new OpenCode session.
   - custom commands
   - agent skills
 
-This repo intentionally stores examples under `agents/`, `commands/`, and `skills/` for learning, not under `.opencode/`.
+This repo intentionally stores examples under `agents/`, `commands/`, and `skills/` for learning.
+
+For local testing, a project-local `.opencode/` directory may exist (it is not required for the learning content).
 
 ## What Exists Now
 
@@ -45,6 +47,11 @@ Integration / patterns:
 New in this session:
 
 - `PROJECT_TODO.md` (created; currently untracked)
+- `.opencode/agents/researcher.md` (project-local researcher agent)
+  - broad topic research + idea generation
+  - structured output with tables and a Sources section
+  - `webfetch: true`, `write/edit/bash: false`
+  - model: `github-copilot/claude-opus-4.5`, temperature: `0.7`
 
 ## Design Constraints Used
 
@@ -101,3 +108,4 @@ git log -5 --oneline
   - `5be2c93` Add comprehensive guides and examples for agents, commands, and skills
 - `PROJECT_TODO.md` was generated from this handoff’s “Recommended Next Work” section and existing repo contents; completed tasks are ticked.
 - A previous tooling issue (“Tool execution aborted”) was noted in prior work; using `apply_patch` has been reliable for creating/editing files.
+- `.opencode/` is currently untracked in git; if you want the agent shared via the repo, add it to version control.
